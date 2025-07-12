@@ -1,0 +1,28 @@
+r,c=map(int,input().split())
+
+matrix1=[]
+for i in range(r):
+    matrix1.append(list(map(int,input().split())))
+    
+matrix2=[]
+for i in range(r):
+    matrix2.append(list(map(int,input().split())))
+    
+print("First Matrix:")
+for row in matrix1:
+   for element in row:
+    print(element,end=" ")
+   print()
+
+print("Second Matrix:")
+for row in matrix2:
+   for element in row:
+    print(element,end=" ")
+   print()
+
+print("Sum of the two matrices is:")
+for i in range(r):
+    for j in range(c):
+        result=matrix1[i][j]+matrix2[i][j]
+        print(result,end=" ")
+    print()
